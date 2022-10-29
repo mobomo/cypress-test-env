@@ -6,3 +6,14 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8000:8000
+    networks:
+      - cypress
+    volumes:
+      - server-data:/mnt/server-data
+      - ./tests:/app/app
+      - ./reports:/app/reportsS
+
+volumes:
+  server-data:
+networks:
+  cypress:
