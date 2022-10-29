@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "/app"
+		}
+	],
+	"settings": {
+		"cucumberautocomplete.steps": [
+		  "apps/**/*.js",
+		  "cypress/**/*.js"
+		],
+		"workbench.colorTheme": "Abyss"
+	}
+}
