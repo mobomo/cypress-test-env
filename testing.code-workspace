@@ -6,7 +6,7 @@
 	],
 	"settings": {
 		"cucumberautocomplete.steps": [
-		  "apps/**/*.js",
+		  "app/**/*.js",
 		  "cypress/**/*.js"
 		],
 		"workbench.colorTheme": "Abyss"
