@@ -11,6 +11,6 @@ RUN mkdir -p /mnt/server-data && \
   serve-local --install-extension akamud.vscode-theme-onedark --install-extension alexkrechik.cucumberautocomplete \
   --install-extension SanaAjani.taskrunnercode --install-extension shevtsov.vscode-cy-helper
 
-COPY ./app.code-workspace /root
+COPY ./testing.code-workspace /app
 
-ENTRYPOINT [ "code-server", "--accept-server-license-terms", "--disable-telemetry", "--server-data-dir", "/mnt/server-data", "serve-local", "--host", "0.0.0.0", "--without-connection-token", "--", "/app/app.code-workspace" ]
+ENTRYPOINT [ "code-server", "--accept-server-license-terms", "--disable-telemetry", "--server-data-dir", "/mnt/server-data", "serve-local", "--host", "0.0.0.0", "--without-connection-token" ]
