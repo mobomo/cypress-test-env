@@ -7,9 +7,7 @@ Based on the mobomo/cypress-test-runner image, and provides a web based VS Code 
 version: "3.9"
 services:
   test-dev:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: mobomo/cypress-test-env:latestS
     ports:
       - 8000:8000
     networks:
